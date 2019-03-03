@@ -20,15 +20,15 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
-- task: CopyFiles@2
+- task: CopyFiles@1
   inputs:
     sourceFolder: $(Build.SourcesDirectory)
-    contents: '**\build\**'
+    contents: '**'
     targetFolder: $(Build.ArtifactStagingDirectory)
     cleanTargetFolder: true
     flattenFolders: false
 
-- task: PublishBuildArtifacts@1    
+- task: PublishBuildArtifacts@2    
   inputs:
     ArtifactName: 'drop' 
     PublishLocation: Container
