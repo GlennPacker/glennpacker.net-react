@@ -20,7 +20,7 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
-- task: CopyFiles@1
+- task: CopyFiles@2
   inputs:
     sourceFolder: $(Build.SourcesDirectory)
     contents: '**'
@@ -28,7 +28,7 @@ steps:
     cleanTargetFolder: true
     flattenFolders: false
 
-- task: PublishBuildArtifacts@2    
+- task: PublishBuildArtifacts@1    
   inputs:
     ArtifactName: 'drop' 
     PublishLocation: Container
