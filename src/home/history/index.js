@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './history.css';
 import HistoryItem from '../historyItem'
+import { Style } from 'radium'
+import styles from './historyStyle'
 
 class History extends Component {
 	state = {};
@@ -22,6 +23,7 @@ class History extends Component {
 		if (this.state.historyData) {
 			return (
 				<div className="card">
+					<Style rules={styles} />
 					<div className="card-header bg-success text-white">
 						History
 					</div>

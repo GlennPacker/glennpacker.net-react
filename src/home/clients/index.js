@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Client from '../client'
-import './clients.css'
+import { Style } from 'radium'
+import styles from './clientsStyle'
 
 class Clients extends Component {
 	state = {};
@@ -22,6 +23,7 @@ class Clients extends Component {
 		if (this.state.clientsData) {
 			return (
 				<div className="card">
+					<Style rules={styles} />
 					<div className="card-header bg-info text-white">
 						Clients
 					</div>

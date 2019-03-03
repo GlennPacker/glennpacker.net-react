@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './client.css'
+import { Style } from 'radium'
+import styles from './clientStyle'
 
 class Client extends Component {
 	state = { expanded: false }
@@ -17,6 +18,7 @@ class Client extends Component {
 		const client = this.props.client
 		if (client) return (
 			<li>
+				<Style rules={styles} />
 				<span>{client.name} </span>
 				{ expandButtons }
 
