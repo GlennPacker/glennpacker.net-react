@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './historyitem.css';
+import { Style } from 'radium'
+import styles from './historyItemStyle'
 
 class HistoryItem extends Component {
 	state = { expanded: false }
@@ -14,6 +15,7 @@ class HistoryItem extends Component {
 
 		if (historyItem) return (
 			<li>
+				<Style rules={styles} />
 				<span className="year">{historyItem.year}</span>
 				<span className="pl-2">{historyItem.title}</span>
 				{

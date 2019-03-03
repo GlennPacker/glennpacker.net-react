@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './client.css'
+import { Style } from 'radium'
+import styles from './clientStyle'
 
 class Client extends Component {
     state = { expanded: false }
@@ -36,7 +37,6 @@ class Client extends Component {
             )
         }
         const cardColor = (index) => {
-            console.log(index)
             switch (index) {
                 case 0:
                 case 4:
@@ -66,9 +66,10 @@ class Client extends Component {
         
         if (client) return (
             <div className="col-4 pb-4">
-                <div className="card" className={cardColor(index)}>
+                <Style rules={styles} />
+                <div className={cardColor(index)}>
                     <div className={cardHeaderColor(index)}>{client.name} {expandButtons}</div>
-                    <div className="card-body client-card-body">
+                    <div className="card-body">
                         <p>
                             {client.summary} 
                         </p>

@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom'
-import './main.css';
 import Footer from '../footer'
 import Header from '../header'
 import Routing from '../routing';
 import Nav from '../nav';
-
-// const SomeComponent = withRouter(props => <Header {...props}/>);
+import { Style } from 'radium'
+import styles from './mainStyle'
 
 const Index = () => (
     <Router>
         <div>
+            <Style rules={styles} />
             <Nav/>     
                      
             <Header  strapline="Software Developer - Contractor"/>
