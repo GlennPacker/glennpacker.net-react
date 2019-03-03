@@ -12,8 +12,8 @@ class Client extends Component {
     
     render() { 
         const expandButtons = this.state.expanded
-			? <i className="fas fa-caret-up  text-white pl-2" onClick={this.toggleExpanded}></i>
-			: <i className="fas fa-caret-down  text-white pl-2" onClick={this.toggleExpanded}></i>
+			? <i className="fas fa-caret-up  text-white pl-2"></i>
+			: <i className="fas fa-caret-down  text-white pl-2"></i>
         
         const clientTech = (isBackEnd, client) => {
             return (client.technologies.some(item => item.isBackEnd === isBackEnd)
@@ -67,7 +67,7 @@ class Client extends Component {
         if (client) return (
             <div className="col-4 pb-4">
                 <Style rules={styles} />
-                <div className={cardColor(index)}>
+                <div className={cardColor(index)} onClick={this.toggleExpanded}>
                     <div className={cardHeaderColor(index)}>{client.name} {expandButtons}</div>
                     <div className="card-body">
                         <p>
