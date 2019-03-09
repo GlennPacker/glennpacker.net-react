@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = (props) => (
+const Footer = () => (
     <div style={{height:'120px'}}>
         <footer className="font-small text-white bg-dark" style={{position: 'fixed', bottom: '0', width: '100%'}}>
             <div className="container-fluid text-center text-md-left pt-3">

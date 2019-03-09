@@ -3,7 +3,7 @@ import glenn from './GlennPacker.jpg';
 import { Style } from 'radium'
 import styles from './siteSummary'
 
-const SiteSummary = (props) => (
+const SiteSummary = () => (
 	<div className="row">
 		<Style rules={styles} />
 		<div className="col-md-4">

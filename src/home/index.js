@@ -3,7 +3,7 @@ import History from './history'
 import Clients from './clients'
 import SiteSummary from './siteSummary'
 
-const Home = (props) => (
+const Home = () => (
     <div>
         <div className="container pt-4">
             <SiteSummary/>

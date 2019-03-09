@@ -12,7 +12,7 @@ const Index = () => (
         <div>
             <Style rules={styles} />
             <Nav/>     
-                     
+       
             <Header  strapline="Software Developer - Contractor"/>
             <Routing/>
             <Footer/>
