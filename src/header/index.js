@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import logo from './logo.png';
 import {withRouter} from 'react-router-dom';
@@ -38,5 +39,9 @@ const Header = (props) => (
 		</header>
 	</div>
 )
+
+Header.propTypes = {
+	strapline: PropTypes.string.isRequired
+}
 
 export default withRouter(Header);
