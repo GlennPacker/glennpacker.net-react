@@ -41,7 +41,10 @@ const Header = (props) => (
 )
 
 Header.propTypes = {
-	strapline: PropTypes.string.isRequired
+	strapline: PropTypes.string.isRequired,
+	loaction: PropTypes.shape({
+		pathname: PropTypes.string
+	})
 }
 
 export default withRouter(Header);
