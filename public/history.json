@@ -8,7 +8,7 @@
 		"listItems" : [{
 			"id": 1,
 			"text": "Back end Technologies",
-			"link": "'jlkjl'"
+			"link": null
 		}, {
 			"id": 2,
 			"text": "Front end Technologies",
