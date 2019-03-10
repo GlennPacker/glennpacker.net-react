@@ -1,7 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Footer from './index';
 
+import Footer from './index';
+import { Style } from 'radium'
 
 describe('footer', () => {
     let wrapper
@@ -16,6 +17,10 @@ describe('footer', () => {
 
     it('should render without throwing an error', () => {
         expect(wrapper.contains(<i className="fas fa-envelope"></i>)).toBe(true);
+    })
+
+    it('should have styles from radium', () => {
+        expect(wrapper.find(Style).length).toBe(1);
     })
 
     it('should use the small font', () => {
