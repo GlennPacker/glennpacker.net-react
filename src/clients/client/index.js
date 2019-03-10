@@ -6,7 +6,6 @@ class Client extends Component {
     state = { expanded: false }
 
     toggleExpanded = (e) => {
-		e.preventDefault();
 		this.setState({expanded: !this.state.expanded})
     }
     
