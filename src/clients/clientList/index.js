@@ -29,7 +29,7 @@ class ClientList extends Component {
                 </div>
             )
         } else {
-            return <div>Helol</div>
+            return null
         }
     }
 }

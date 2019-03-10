@@ -1,8 +1,11 @@
 import React from 'react';
+import { Style } from 'radium'
+import styles from './footerStyle'
 
 const Footer = () => (
-    <div style={{height:'120px'}}>
-        <footer className="font-small text-white bg-dark" style={{position: 'fixed', bottom: '0', width: '100%'}}>
+    <div>
+        <Style rules={styles} />
+        <footer className="font-small text-white bg-dark">
             <div className="container-fluid text-center text-md-left pt-3">
                 <div className="row justify-content-center">
                     <div className="col-md-3 mb-md-0 mb3">
