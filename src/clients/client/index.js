@@ -49,7 +49,6 @@ class Client extends Component {
         }
 
         const cardHeaderColor = (index) => {
-            console.log(index)
             switch (index) {
                 case 0:
                 case 4:
