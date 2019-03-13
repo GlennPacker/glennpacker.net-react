@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { Style } from 'radium'
 import Client from './index';
+import { Style } from 'radium'
 
 const clientProp = {
     "name": "Branthill Computing",
@@ -30,7 +30,7 @@ describe('client', () => {
     let wrapper
     beforeEach(() => {
         wrapper = shallow(<Client client={clientProp} index={0} />);
-    }) 
+    })
 
     it('should render', () => {
         expect(wrapper).not.toBeNull()
@@ -72,5 +72,14 @@ describe('client', () => {
     it('should use a border colour of primary when index is 2', () => {
         wrapper = shallow(<Client client={clientProp} index={2} />);
         expect(wrapper.find('.border-primary').length).toBe(1)
+    })
+
+    it('should display expansion button', () => {
+        expect(wrapper.find('.fa-caret-down').length).toBe(1)
+    })
+
+    it('should show the expansion on click', () => {
+        wrapper.find('.card').simulate('click')
+        expect(wrapper.containsMatchingElement(<dt>Agile</dt>)).toBe(true)
     })
 })
