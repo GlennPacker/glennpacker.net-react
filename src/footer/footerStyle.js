@@ -1,6 +1,6 @@
 export default {
     'footer': {
-        height: 120,
+        height: 80,
         position: 'fixed',
         bottom: 0,
         width: '100%'

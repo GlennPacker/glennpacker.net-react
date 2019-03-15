@@ -11,10 +11,12 @@ const Index = () => (
     <Router>
         <div>
             <Style rules={styles} />
-            <Nav/>     
-       
+            <Nav/>
+
             <Header  strapline="Software Developer - Contractor"/>
-            <Routing/>
+            <div className="main-content">
+                <Routing/>
+            </div>
             <Footer/>
         </div>
     </Router>
