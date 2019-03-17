@@ -3,14 +3,16 @@ import { Route, Switch } from 'react-router-dom'
 
 import Home from '../home'
 import Clients from '../clients';
+import Contact  from '../contact';
 
-const Routing = () => ( 
+const Routing = () => (
     <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/clients" component={Clients} />
+        <Route path="/clients" component={Clients} />
+        <Route path="/contact" component={Contact} />
         <Route render={ () => <h1>404 Error</h1> } />
     </Switch>
 )
 
- 
+
 export default Routing;
