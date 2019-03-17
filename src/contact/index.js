@@ -46,7 +46,7 @@ class Contact extends Component {
 			<div>
 			<Style rules={styles} />
 			{
-				this.state.submitted ?
+				!this.state.submitted ?
 					<div className="container pt-3">
 						<form onSubmit={this.sendContactDetails}>
 							<div className="form-group">
@@ -105,7 +105,13 @@ class Contact extends Component {
 							</div>
 						</div>
 					</div>
-				: <div>yikes</div>
+				: 
+				<div className="container pt-5">
+					<div className="col-sm">
+						<h1>Yikes</h1>
+						<p className="pt-3">I would get back to you but the server is having problems.</p>
+					</div>
+				</div>
 			}
 		</div>
 		)
