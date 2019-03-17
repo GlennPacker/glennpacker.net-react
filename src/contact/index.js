@@ -1,9 +1,8 @@
 import React, { Component } from "react";
+import ContactForm from './contactForm';
+import ConstactSubmitted from './contactSubmited';
+import ServerProblems from './serverProblems';
 import axios from 'axios';
-import { Style } from 'radium'
-import styles from './contactStyle'
-import glenn from './GlennPacker.jpg'
-import cat from './cat-waiting-for-the-mail.jpg'
 
 class Contact extends Component {
 	constructor() {
@@ -43,77 +42,16 @@ class Contact extends Component {
 
 	render() {
 		return (
-			<div>
-			<Style rules={styles} />
-			{
-				!this.state.submitted ?
-					<div className="container pt-3">
-						<form onSubmit={this.sendContactDetails}>
-							<div className="form-group">
-								<label htmlFor="name">Name</label>
-								<input
-									required
-									type="text"
-									className="form-control"
-									placeholder="Enter name"
-									name="name"
-									value={this.state.name}
-									onChange={this.onFieldChange}
-								/>
-							</div>
-
-							<div className="form-group">
-								<label htmlFor="email">Email address</label>
-								<input
-									type="email"
-									className="form-control"
-									placeholder="Enter email"
-									name="email"
-									value={this.state.email}
-									onChange={this.onFieldChange}
-								/>
-							</div>
-
-							<div className="form-group">
-								<label htmlFor="message">Message</label>
-								<textarea
-									required
-									className="form-control"
-									placeholder="Enter message"
-									rows="3"
-									name="message"
-									value={this.state.message}
-									onChange={this.onFieldChange}
-								/>
-							</div>
-
-							<button type="submit" className="btn btn-primary">Submit</button>
-						</form>
-					</div>
-				: !this.state.serverFail ?
-					<div className="container pt-5">
-						<div className="row">
-							<div className="col-sm">
-								<img src={glenn} className="contact-img" alt="contact glenn" />
-							</div>
-							<div className="col-sm">
-								<h1>Thank you</h1>
-								<p className="pt-3">I will get back to you as soon as we can.</p>
-							</div>
-							<div className="col-sm">
-								<img src={cat} className="contact-img" alt="mailman waiting" />
-							</div>
-						</div>
-					</div>
-				: 
-				<div className="container pt-5">
-					<div className="col-sm">
-						<h1>Yikes</h1>
-						<p className="pt-3">I would get back to you but the server is having problems.</p>
-					</div>
-				</div>
-			}
-		</div>
+			!this.state.submitted? 
+				<ContactForm 
+					contactDetails={this.state.contactDetails} 
+					submitForm={this.sendContactDetails} 
+					onFieldChange={this.onFieldChange} 
+				/>
+			:this.state.serverFail ?
+				<ServerProblems />
+			:
+				<ConstactSubmitted />
 		)
 	}
 }
