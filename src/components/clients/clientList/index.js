@@ -1,35 +1,28 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import Client from "../client";
 import { loadClients } from "../../../redux/actions/clientActions";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
-class ClientList extends Component {
-  componentDidMount() {
-    const { loadClients, clients } = this.props;
-
+// Client list to use hooks
+function ClientList({ loadClients, clients }) {
+  useEffect(() => {
     if (clients.length === 0) {
       loadClients().catch(error => {
         alert("Loading courses failed" + error);
       });
     }
-  }
+  }, []); // empty array for the items to watch (will only run once if empty array)
 
-  render() {
-    if (this.props.clients) {
-      return (
-        <div className="container">
-          <div className="row">
-            {this.props.clients.map((client, i) => {
-              return <Client key={i} index={i} client={client} />;
-            })}
-          </div>
-        </div>
-      );
-    } else {
-      return null;
-    }
-  }
+  return (
+    <div className="container">
+      <div className="row">
+        {clients.map((client, i) => {
+          return <Client key={i} index={i} client={client} />;
+        })}
+      </div>
+    </div>
+  );
 }
 
 ClientList.propTypes = {
