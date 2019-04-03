@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 
 // redux
-import { bindActionCreators } from "redux";
-import * as historyActions from "../../../redux/actions/historyActions";
+import { loadHistories } from "../../../redux/actions/historyActions";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
@@ -11,10 +10,10 @@ import HistoryItem from "../historyItem";
 
 class HistoriesContainer extends Component {
   componentDidMount() {
-    const { actions, histories } = this.props;
+    const { loadHistories, histories } = this.props;
 
     if (histories.length === 0) {
-      actions.loadHistories().catch(error => {
+      loadHistories().catch(error => {
         alert("Loading history failed" + error);
       });
     }
@@ -32,7 +31,7 @@ class HistoriesContainer extends Component {
 }
 
 HistoriesContainer.propTypes = {
-  actions: PropTypes.object.isRequired,
+  loadHistories: PropTypes.func.isRequired,
   histories: PropTypes.array.isRequired
 };
 
@@ -42,13 +41,9 @@ function mapStateToProps(state) {
   };
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    actions: {
-      loadHistories: bindActionCreators(historyActions.loadHistories, dispatch)
-    }
-  };
-}
+const mapDispatchToProps = {
+  loadHistories
+};
 
 export default connect(
   mapStateToProps,
