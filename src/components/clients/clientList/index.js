@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Client from "../client";
-import * as clientActions from "../../../redux/actions/clientActions";
+import { loadClients } from "../../../redux/actions/clientActions";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
@@ -44,7 +44,7 @@ function mapStateToProps(state) {
 }
 
 const mapDispatchToProps = {
-  loadClients: clientActions.loadClients
+  loadClients
 };
 
 export default connect(
