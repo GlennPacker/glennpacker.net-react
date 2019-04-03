@@ -1,8 +1,10 @@
-import { combineReducers } from 'redux';
-import clients from './clientReducer';
+import { combineReducers } from "redux";
+import clients from "./clientReducer";
+import histories from "./historyReducer";
 
 const rootReducer = combineReducers({
-	clients
+  clients,
+  histories
 });
 
 export default rootReducer;
