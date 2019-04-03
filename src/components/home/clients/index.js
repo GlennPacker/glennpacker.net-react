@@ -1,26 +1,14 @@
 import React, { Component } from 'react';
 import Client from '../client'
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+
 import { Style } from 'radium'
 import styles from './clientsStyle'
 
 class Clients extends Component {
-	state = {};
-
-	componentDidMount() {
-		this.clients();
-	}
-
-	clients = ()  => {
-		fetch('./clients.json')
-		.then(data => data.json())
-		.then(clientsData => {
-			this.clientsData = clientsData;
-			this.setState({ clientsData });
-		})
-	}
-
 	render() {
-		if (this.state.clientsData) {
+		if (this.props.clients) {
 			return (
 				<div className="card">
 					<Style rules={styles} />
@@ -30,7 +18,7 @@ class Clients extends Component {
 					<div className="card-body client-card-body">
 						<p className="card-text">Previous clients in recent years:</p>
 						<ul>
-							{ this.state.clientsData.map((client, i) => {
+							{ this.props.clients.map((client, i) => {
 								return (<Client key={i} client={client} />)
 							})}
 						</ul>
@@ -43,5 +31,16 @@ class Clients extends Component {
 	}
 }
 
+Clients.propTypes = {
+	clients: PropTypes.array.isRequired
+};
 
-export default Clients;
+function mapStateToProps (state) {
+	return {
+		clients: state.clients
+	}
+}
+
+export default connect(
+	mapStateToProps
+)(Clients);

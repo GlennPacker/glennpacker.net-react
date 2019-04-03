@@ -11,7 +11,7 @@ class Client extends Component {
 
 	render() {
 		const expandButtons = this.state.expanded
-			? <i className="fas fa-caret-up text-info pl-2" onClick={this.toggleExpanded}></i>
+			? <i className="fas fa-caret-up text-info pl-2 pt-3" onClick={this.toggleExpanded}></i>
 			: <i className="fas fa-caret-down text-info pl-2 pt-3" onClick={this.toggleExpanded}></i>
 
 		const client = this.props.client
