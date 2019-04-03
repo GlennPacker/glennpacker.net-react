@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { bindActionCreators } from "redux";
 import Client from "../client";
 import * as clientActions from "../../../redux/actions/clientActions";
 import PropTypes from "prop-types";
@@ -7,10 +6,10 @@ import { connect } from "react-redux";
 
 class ClientList extends Component {
   componentDidMount() {
-    const { actions, clients } = this.props;
+    const { loadClients, clients } = this.props;
 
     if (clients.length === 0) {
-      actions.loadClients().catch(error => {
+      loadClients().catch(error => {
         alert("Loading courses failed" + error);
       });
     }
@@ -34,7 +33,7 @@ class ClientList extends Component {
 }
 
 ClientList.propTypes = {
-  actions: PropTypes.object.isRequired,
+  loadClients: PropTypes.func.isRequired,
   clients: PropTypes.array.isRequired
 };
 
@@ -44,13 +43,9 @@ function mapStateToProps(state) {
   };
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    actions: {
-      loadClients: bindActionCreators(clientActions.loadClients, dispatch)
-    }
-  };
-}
+const mapDispatchToProps = {
+  loadClients: clientActions.loadClients
+};
 
 export default connect(
   mapStateToProps,
