@@ -1,4 +1,4 @@
 export default {
   clients: [],
-  history: []
+  histories: []
 };
