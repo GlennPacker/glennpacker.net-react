@@ -6,10 +6,12 @@ import Clients from "../clients";
 import Contact from "../contact";
 import SpaDevelopment from "../spaDevelopment";
 import FrontEndDevelopment from "../frontEndDevelopment";
+import BackEndDevelopment from "../backEndDevelopment";
 
 const Routing = () => (
 	<Switch>
 		<Route exact path="/" component={Home} />
+		<Route path="/backenddevelopment" component={BackEndDevelopment} />
 		<Route path="/clients" component={Clients} />
 		<Route path="/contact" component={Contact} />
 		<Route path="/spadevelopment" component={SpaDevelopment} />
