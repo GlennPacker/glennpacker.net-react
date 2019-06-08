@@ -33,7 +33,7 @@ const SpaDevelopment = () => {
 			</>
 		),
 		articles: {
-			minHeight: 325,
+			minHeight: 330,
 			data: [
 				{
 					colour: "success",

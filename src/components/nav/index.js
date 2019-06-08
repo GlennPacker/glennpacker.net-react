@@ -18,11 +18,20 @@ const Nav = () => {
 				</li>
 				<li className="nav-item">
 					<NavLink
+						to="/frontenddevelopment"
+						className="nav-link"
+						activeStyle={activeStyle}
+					>
+						Front End
+					</NavLink>
+				</li>
+				<li className="nav-item">
+					<NavLink
 						to="/spadevelopment"
 						className="nav-link"
 						activeStyle={activeStyle}
 					>
-						SPA Development
+						SPA
 					</NavLink>
 				</li>
 				<li className="nav-item">
