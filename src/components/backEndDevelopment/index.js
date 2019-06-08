@@ -22,7 +22,7 @@ const FrontEndDevelopment = () => {
 			minHeight: 350,
 			data: [
 				{
-					colour: "danger",
+					colour: "success",
 					heading: "Application",
 					content: (
 						<>
@@ -46,7 +46,7 @@ const FrontEndDevelopment = () => {
 					)
 				},
 				{
-					colour: "success",
+					colour: "danger",
 					heading: "Databases",
 					content: (
 						<>

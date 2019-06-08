@@ -36,7 +36,7 @@ const SpaDevelopment = () => {
 			minHeight: 330,
 			data: [
 				{
-					colour: "success",
+					colour: "danger",
 					heading: "Fast and Responsive",
 					content: (
 						<>
@@ -58,7 +58,7 @@ const SpaDevelopment = () => {
 					)
 				},
 				{
-					colour: "info",
+					colour: "success",
 					heading: "User Experience",
 					content: (
 						<>
