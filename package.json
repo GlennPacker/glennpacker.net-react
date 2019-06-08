@@ -17,12 +17,12 @@
     "reselect": "4.0.0"
   },
   "devDependencies": {
-    "radium": "^0.25.1",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
     "jest-enzyme": "^7.0.2",
-    "redux-immutable-state-invariant": "2.1.0",
-    "react-test-renderer": "^16.8.4"
+    "radium": "^0.25.1",
+    "react-test-renderer": "^16.8.4",
+    "redux-immutable-state-invariant": "2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
