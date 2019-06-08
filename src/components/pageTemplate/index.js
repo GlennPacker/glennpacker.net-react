@@ -4,10 +4,11 @@ import ContentTemplate from "../contentTemplate";
 const PageTemplate = page => (
 	<div className="container pt-4">
 		<div className="row">
-			<div className="col-md-4 pb-5">
+			<div className="col-md-4 pb-5 d-none d-md-block">
 				<img
 					src={page.img.src}
 					height="250px"
+					style={{ maxWidth: "100%" }}
 					className={page.img.classes}
 					alt="spa"
 				/>
