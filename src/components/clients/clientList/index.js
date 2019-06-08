@@ -32,7 +32,7 @@ ClientList.propTypes = {
 
 function mapStateToProps(state) {
   return {
-    clients: state.clients
+    clients: state.clients.slice(0, Math.floor(state.clients.length / 3) * 3) // ensure there is only a multiple of three
   };
 }
 
