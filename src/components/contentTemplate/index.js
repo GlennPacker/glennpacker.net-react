@@ -1,12 +1,9 @@
 import React from "react";
 import ArticleRow from "../articleRow";
 
-const ContentTemplate = ({ heading, content, articles }) => (
+const ContentTemplate = ({ content, articles }) => (
 	<>
-		<div className="col-md-8 pb-5">
-			<h2>{heading}</h2>
-			{content}
-		</div>
+		<div className="col-md-8 pb-2">{content}</div>
 
 		<ArticleRow {...articles} />
 	</>

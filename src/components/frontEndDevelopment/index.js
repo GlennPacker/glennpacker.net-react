@@ -1,11 +1,49 @@
 import React from "react";
-import { Style } from "radium";
 import feImg from "./fe.png";
 import PageTemplate from "../pageTemplate";
+import Carousell from "../carousell";
 
 const FrontEndDevelopment = () => {
+	const feCerts = [
+		"A-Practical-Start-with-React.png",
+		"ABetterCSSLESSAndSASS.png",
+		"An-AngularJS-Playbook.png",
+		"angular-getting-started.jpg",
+		"angularbestpractices.jpg",
+		"angularfronttobackwithwebapi.jpg",
+		"AngularJSBestPractices.jpg",
+		"angularjsbestpractices.png",
+		"angularjslineofbusinessapplications.png",
+		"angularjswithtypescript.png",
+		"AngularTheBigPicture.jpg",
+		"Bootstrap3.jpg",
+		"BowerFundamentals.png",
+		"css.png",
+		"Getting-Started-with-ES2017-ES8.png",
+		"googlemapsapigetstarted.png",
+		"HandsOnResponsiveWebDesign.jpg",
+		"html5fromscratch.png",
+		"htmlfundamentals.jpg",
+		"IntroductiontoBootstrap.jpg",
+		"introductiontocss.jpg",
+		"IntroductionToPresentationDesign.jpg",
+		"javascriptforcsharpdevelopers.png",
+		"jQueryFundamentals.jpg",
+		"jQueryGettingStarted.jpg",
+		"jQueryUI.jpg",
+		"QuickStartToJavaScript.jpg",
+		"QuickStartToJavaScriptVolume2.jpg",
+		"reactfundamentals.png",
+		"React-Getting-Started.png",
+		"socialmedia.png",
+		"Styling-React-Components.png",
+		"Testing-AngularJS-From-Scratch.png",
+		"thinkingoutsidetheboxwithcssshapes.png",
+		"typescriptfundamentals.png",
+		"Vue-js-Getting-Started.png"
+	];
+
 	const fe = {
-		heading: "Front End Development",
 		img: {
 			src: feImg,
 			classes: ""
@@ -71,7 +109,7 @@ const FrontEndDevelopment = () => {
 					content: (
 						<>
 							<p>
-								Glenn Packer has been writing JavaScript for over %15 years. For
+								Glenn Packer has been writing JavaScript for over 15 years. For
 								a long time JavaScript was just a way to animate somthing on a
 								page, this was made easier by the emergance jQuery and jQuery
 								UI.
@@ -84,7 +122,7 @@ const FrontEndDevelopment = () => {
 								<a href="//angular.glennpacker.net" target="blank">
 									Angular
 								</a>
-								,<a href="//vuejs.glennpacker.net">Vue Js</a> and React are
+								, <a href="//vuejs.glennpacker.net">Vue Js</a> and React are
 								today some of the most sort after skills on the market.
 							</p>
 						</>
@@ -97,6 +135,7 @@ const FrontEndDevelopment = () => {
 	return (
 		<div>
 			<PageTemplate {...fe} />
+			<Carousell imgs={feCerts} path={"frontend"} />
 		</div>
 	);
 };

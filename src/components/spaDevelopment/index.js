@@ -3,10 +3,28 @@ import { Style } from "radium";
 import spaImg from "./spa.png";
 import styles from "./SpaDevelopmentStyle";
 import PageTemplate from "../pageTemplate";
+import Carousell from "../carousell";
 
 const SpaDevelopment = () => {
+	const spaCerts = [
+		"A-Practical-Start-with-React.png",
+		"An-AngularJS-Playbook.png",
+		"angular-getting-started.jpg",
+		"angularbestpractices.jpg",
+		"angularfronttobackwithwebapi.jpg",
+		"AngularJSBestPractices.jpg",
+		"angularjsbestpractices.png",
+		"angularjslineofbusinessapplications.png",
+		"angularjswithtypescript.png",
+		"AngularTheBigPicture.jpg",
+		"reactfundamentals.png",
+		"React-Getting-Started.png",
+		"Styling-React-Components.png",
+		"Testing-AngularJS-From-Scratch.png",
+		"Vue-js-Getting-Started.png"
+	];
+
 	const spa = {
-		heading: "Single Page Application (SPA) Development",
 		img: {
 			src: spaImg,
 			classes: ""
@@ -82,6 +100,7 @@ const SpaDevelopment = () => {
 		<div>
 			<Style rules={styles} />
 			<PageTemplate {...spa} />
+			<Carousell imgs={spaCerts} path={"frontend"} />
 		</div>
 	);
 };
