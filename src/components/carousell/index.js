@@ -7,13 +7,11 @@ const Carousell = ({ imgs, path }) => {
 		accessibility: false,
 		adaptiveHeight: false,
 		arrows: false,
-		autoplaySpeed: 3000,
+		autoplaySpeed: 4000,
 		autoplay: true,
 		dots: false,
 		infinite: true,
-		speed: 1000,
-		slidesToShow: 3,
-		slidesToScroll: 2
+		speed: 1000
 	};
 
 	const largeSettings = {
@@ -39,7 +37,7 @@ const Carousell = ({ imgs, path }) => {
 			<div key="item">
 				<img
 					src={"/" + path + "/" + item}
-					height="300px"
+					height="250px"
 					alt={"front end certificate " + item.split(".")[0]}
 				/>
 			</div>
@@ -47,7 +45,7 @@ const Carousell = ({ imgs, path }) => {
 	});
 
 	return (
-		<>
+		<div className="container">
 			<div className="pt-3 d-none d-sm-block d-md-none">
 				<Slider {...smallSettings}>{slides}</Slider>
 			</div>
@@ -59,7 +57,7 @@ const Carousell = ({ imgs, path }) => {
 			<div className="pt-3 d-none d-md-none d-lg-none d-xl-block">
 				<Slider {...largeSettings}>{slides}</Slider>
 			</div>
-		</>
+		</div>
 	);
 };
 
