@@ -5,33 +5,39 @@ import styles from "./footerStyle";
 const Footer = () => (
 	<div>
 		<Style rules={styles} />
-		<footer className="font-small text-white bg-dark">
-			<div className="container text-center text-md-left pt-3">
-				<div className="row justify-content-center">
-					<div className="col-lg-1 mb-md-0 d-none d-sm-none d-lg-block">
-						<a href="//www.linkedin.com/pub/glenn-packer/22/186/107">
-							<i className="fab fa-linkedin text-white" />
-						</a>
+		<footer className="font-small text-white bg-danger ">
+			<div className="container text-center text-md-left pt-3 pl-5 pr-5 container">
+				<div className="row justify-content-center mb3">
+					<div className="col-md-3 d-none d-md-block mb-md-0">
+						<div>
+							<a href="//www.linkedin.com/pub/glenn-packer/22/186/107">
+								<i className="fab fa-linkedin text-white" />
+							</a>
+						</div>
+						<div>
+							<i className="fas fa-phone" />
+							<a href="tel:07568400965" className="text-white pl-2">
+								07568400965
+							</a>
+						</div>
 					</div>
-
-					<div className="col-md-4 col-lg-2 mb-md-0 mb3">
-						<i className="fas fa-phone" />
-						<a href="tel:07568400965" className="text-white pl-2">
-							07568400965
-						</a>
+					<div className="col-md-8 mb-md-0 text-right d-none d-md-block">
+						<div>
+							<i className="fas fa-envelope" />
+							<a href="mailto:glen.packer@glennpacker.net" className="pl-2">
+								Glenn.Packer@GlennPacker.net
+							</a>
+						</div>
+						<div>
+							<i className="fas fa-map-marker pr-2 text-white" />
+							22 The Martletts, Hellingly, East Sussex, BN22 4FA
+						</div>
 					</div>
-					<div className="col-md-8 col-lg-4 mb-md-0 mb3">
+					<div className="d-block d-md-none">
 						<i className="fas fa-envelope" />
-						<a
-							href="mailto:glen.packer@glennpacker.net"
-							className="text-white pl-2"
-						>
+						<a href="mailto:glen.packer@glennpacker.net">
 							Glenn.Packer@GlennPacker.net
 						</a>
-					</div>
-					<div className="col-lg-5 text-right d-none d-md-none d-lg-block">
-						<i className="fas fa-map-marker pr-2" />
-						22 The Martletts, Hellingly, East Sussex, BN22 4FA
 					</div>
 				</div>
 			</div>
