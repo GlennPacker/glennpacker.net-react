@@ -38,7 +38,7 @@ const Carousell = ({ imgs, path }) => {
 				<img
 					src={"/" + path + "/" + item}
 					height="250px"
-					alt={"front end certificate " + item.split(".")[0]}
+					alt={path + " certificate " + item.split(".")[0]}
 				/>
 			</div>
 		);
