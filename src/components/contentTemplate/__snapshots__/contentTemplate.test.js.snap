@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Server Problems should render matching snapshot 1`] = `
+<Fragment>
+  <div
+    className="col-md-8 pb-2"
+  >
+    <div>
+      hello
+    </div>
+  </div>
+  <ArticleRow
+    0={
+      Object {
+        "a": 1,
+      }
+    }
+    1={
+      Object {
+        "a": 2,
+      }
+    }
+  />
+</Fragment>
+`;

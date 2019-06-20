@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clients should render matching snapshot 1`] = `
+<div
+  className="container pt-3"
+>
+  <Connect(ClientList) />
+</div>
+`;

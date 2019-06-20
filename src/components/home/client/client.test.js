@@ -30,7 +30,7 @@ describe('client', () => {
     let wrapper
     beforeEach(() => {
         wrapper = shallow(<Client client={clientProp} />);
-    }) 
+    })
 
     it('should render', () => {
         expect(wrapper).not.toBeNull();
@@ -45,24 +45,24 @@ describe('client', () => {
         expect(wrapper.find(Style).length).toBe(1);
     })
 
-    it('should display not display the expansion by default (state test)', () => { 
+    it('should display not display the expansion by default (state test)', () => {
         expect(wrapper.state('expanded')).toBe(false)
     })
 
-    it('should display not display the expansion by default (html test)', () => { 
+    it('should display not display the expansion by default (html test)', () => {
         expect(wrapper.containsMatchingElement(<dt>Technolgies</dt>)).toBe(false)
     })
 
-    it('should display expansion button', () => { 
+    it('should display expansion button', () => {
         expect(wrapper.find('.fa-caret-down').length).toBe(1)
     })
 
-    it('should show the expansion on click', () => { 
+    it('should show the expansion on click', () => {
         wrapper.find('.fa-caret-down').simulate('click')
         expect(wrapper.containsMatchingElement(<dt>Technolgies</dt>)).toBe(true)
     })
 
-    it('should hide the expansion on two clicks', () => { 
+    it('should hide the expansion on two clicks', () => {
         wrapper.find('.fa-caret-down').simulate('click')
         wrapper.find('.fa-caret-up').simulate('click')
         expect(wrapper.containsMatchingElement(<dt>Technolgies</dt>)).toBe(false)
@@ -71,15 +71,19 @@ describe('client', () => {
     describe('with client expanded', () => {
         beforeEach(() => {
             wrapper = shallow(<Client client={clientProp} />);
-            wrapper.setState({expanded: true})
-        }) 
-        
-        it('should display expansion', () => { 
+            wrapper.setState({ expanded: true })
+        })
+
+        it('should display expansion', () => {
             expect(wrapper.containsMatchingElement(<dt>Technolgies</dt>)).toBe(true)
         })
 
         it('should display the tech items', () => {
             expect(wrapper.containsMatchingElement(<span>JSON</span>)).toBe(true)
         })
-    })    
+
+        it('renders correctly', () => {
+            expect(wrapper).toMatchSnapshot();
+        })
+    })
 })

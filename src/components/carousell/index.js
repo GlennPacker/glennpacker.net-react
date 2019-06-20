@@ -34,7 +34,7 @@ const Carousell = ({ imgs, path }) => {
 
 	const slides = imgs.map(item => {
 		return (
-			<div key="item">
+			<div key={item}>
 				<img
 					src={"/" + path + "/" + item}
 					height="250px"

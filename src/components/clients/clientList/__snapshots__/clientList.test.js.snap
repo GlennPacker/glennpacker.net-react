@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clientList should render correctly compared to snapshot 1`] = `
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
+`;

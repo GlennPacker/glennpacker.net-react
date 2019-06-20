@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clients should render correctly compared to snapshot 1`] = `
+<div
+  className="card"
+>
+  <Style
+    rules={
+      Object {
+        ".client-card-body": Object {
+          "minHeight": 450,
+        },
+        "ul": Object {
+          "listStyle": "none",
+          "paddingLeft": 0,
+        },
+      }
+    }
+    scopeSelector=""
+  />
+  <div
+    className="card-header bg-info text-white"
+  >
+    Clients
+  </div>
+  <div
+    className="card-body client-card-body"
+  >
+    <p
+      className="card-text"
+    >
+      Previous clients in recent years:
+    </p>
+    <Connect(ClientContainer) />
+  </div>
+</div>
+`;

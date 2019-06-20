@@ -6,10 +6,10 @@ import { Style } from 'radium'
 
 describe('footer', () => {
     let wrapper
-    
+
     beforeAll(() => {
         wrapper = shallow(<Footer />);
-    }) 
+    })
 
     it('should render', () => {
         expect(wrapper).not.toBeNull();
@@ -25,5 +25,9 @@ describe('footer', () => {
 
     it('should use the small font', () => {
         expect(wrapper.find('.font-small').length).toBe(1);
+    })
+
+    it('should render matching snapshot', () => {
+        expect(wrapper).toMatchSnapshot();
     })
 })

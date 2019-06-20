@@ -7,9 +7,13 @@ describe('clients', () => {
     let wrapper
     beforeAll(() => {
         wrapper = shallow(<Clients />);
-    }) 
+    })
 
     it('should render', () => {
         expect(wrapper).not.toBeNull();
+    })
+
+    it('should render correctly compared to snapshot', () => {
+        expect(wrapper).toMatchSnapshot()
     })
 })
