@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackEndDevelopment renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="pt-3 d-none d-sm-block d-md-none"
+  >
+    <Slider
+      accessibility={false}
+      adaptiveHeight={false}
+      arrows={false}
+      autoplay={true}
+      autoplaySpeed={4000}
+      dots={false}
+      infinite={true}
+      slidesToScroll={1}
+      slidesToShow={1}
+      speed={1000}
+    >
+      <div
+        key="a.png"
+      >
+        <img
+          alt="path certificate a"
+          height="250px"
+          src="/path/a.png"
+        />
+      </div>
+    </Slider>
+  </div>
+  <div
+    className="pt-3 d-none d-md-block d-xl-none"
+  >
+    <Slider
+      accessibility={false}
+      adaptiveHeight={false}
+      arrows={false}
+      autoplay={true}
+      autoplaySpeed={4000}
+      dots={false}
+      infinite={true}
+      slidesToScroll={1}
+      slidesToShow={2}
+      speed={1000}
+    >
+      <div
+        key="a.png"
+      >
+        <img
+          alt="path certificate a"
+          height="250px"
+          src="/path/a.png"
+        />
+      </div>
+    </Slider>
+  </div>
+  <div
+    className="pt-3 d-none d-md-none d-lg-none d-xl-block"
+  >
+    <Slider
+      accessibility={false}
+      adaptiveHeight={false}
+      arrows={false}
+      autoplay={true}
+      autoplaySpeed={4000}
+      dots={false}
+      infinite={true}
+      slidesToScroll={2}
+      slidesToShow={3}
+      speed={1000}
+    >
+      <div
+        key="a.png"
+      >
+        <img
+          alt="path certificate a"
+          height="250px"
+          src="/path/a.png"
+        />
+      </div>
+    </Slider>
+  </div>
+</div>
+`;

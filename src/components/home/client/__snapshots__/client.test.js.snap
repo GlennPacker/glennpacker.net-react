@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`client with client expanded renders correctly 1`] = `
+<li>
+  <Style
+    rules={
+      Object {
+        ".client-item": Object {
+          "left": 25,
+          "position": "relative",
+        },
+      }
+    }
+    scopeSelector=""
+  />
+  <span>
+    Branthill Computing
+     
+  </span>
+  <i
+    className="fas fa-caret-up text-info pl-2 pt-3"
+    onClick={[Function]}
+  />
+  <div
+    className="client-item"
+  >
+    <p>
+      <span>
+        Front End Developer
+         
+      </span>
+      <span>
+        (
+        Apr 2018 - Present
+        )
+      </span>
+    </p>
+    <dl>
+      <dt>
+        Technolgies
+      </dt>
+      <dd
+        key="0"
+      >
+        <a
+          href="//vuejs.glennpacker.net/"
+        >
+          Vue Js
+        </a>
+      </dd>
+      <dd
+        key="1"
+      >
+        <span>
+          JSON
+        </span>
+      </dd>
+      <dd
+        key="2"
+      >
+        <span>
+          SQL
+        </span>
+      </dd>
+    </dl>
+  </div>
+</li>
+`;

@@ -82,4 +82,8 @@ describe('client', () => {
         wrapper.find('.card').simulate('click')
         expect(wrapper.containsMatchingElement(<dt>Agile</dt>)).toBe(true)
     })
+
+    it('renders correctly', () => {
+        expect(wrapper).toMatchSnapshot();
+    })
 })

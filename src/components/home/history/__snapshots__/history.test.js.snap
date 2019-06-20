@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`history should render correctly compared to snapshot 1`] = `
+<div
+  className="card"
+>
+  <Style
+    rules={
+      Object {
+        ".history-card-body": Object {
+          "minHeight": 450,
+        },
+        "ul": Object {
+          "listStyle": "none",
+          "paddingLeft": 0,
+        },
+      }
+    }
+    scopeSelector=""
+  />
+  <div
+    className="card-header bg-success text-white"
+  >
+    History
+  </div>
+  <div
+    className="card-body history-card-body"
+  >
+    <p
+      className="card-text"
+    >
+      With over 25 years experience in the IT industry from support, training and development.
+    </p>
+    <Connect(HistoriesContainer) />
+  </div>
+</div>
+`;

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`client renders correctly 1`] = `
+<div
+  className="col-4 pb-4"
+>
+  <Style
+    rules={
+      Object {
+        ".card-body": Object {
+          "minHeight": "153px",
+        },
+      }
+    }
+    scopeSelector=""
+  />
+  <div
+    className="border-success card"
+    onClick={[Function]}
+  >
+    <div
+      className="bg-success card-header text-white"
+    >
+      Branthill Computing
+       
+      <i
+        className="fas fa-caret-down  text-white pl-2"
+      />
+    </div>
+    <div
+      className="card-body"
+    >
+      <p>
+        Green field application development for inventory Management, forecasting, demand planning and inventory control
+      </p>
+    </div>
+  </div>
+</div>
+`;

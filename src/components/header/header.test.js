@@ -7,9 +7,13 @@ describe('site header', () => {
     let wrapper
     beforeAll(() => {
         wrapper = shallow(<Header />);
-    }) 
+    })
 
     it('should render', () => {
         expect(wrapper).not.toBeNull();
+    })
+
+    it('renders correctly', () => {
+        expect(wrapper).toMatchSnapshot();
     })
 })

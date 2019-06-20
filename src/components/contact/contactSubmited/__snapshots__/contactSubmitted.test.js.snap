@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact Submitted should render matching snapshot 1`] = `
+<div
+  className="container pt-5"
+>
+  <Style
+    rules={
+      Object {
+        ".contact-img": Object {
+          "borderRadius": "50%",
+          "height": 230,
+          "width": 230,
+        },
+      }
+    }
+    scopeSelector=""
+  />
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm"
+    >
+      <img
+        alt="contact glenn"
+        className="contact-img"
+        src="GlennPacker.jpg"
+      />
+    </div>
+    <div
+      className="col-sm"
+    >
+      <h1>
+        Thank you
+      </h1>
+      <p
+        className="pt-3"
+      >
+        I will get back to you as soon as we can.
+      </p>
+    </div>
+    <div
+      className="col-sm"
+    >
+      <img
+        alt="mailman waiting"
+        className="contact-img"
+        src="cat-waiting-for-the-mail.jpg"
+      />
+    </div>
+  </div>
+</div>
+`;

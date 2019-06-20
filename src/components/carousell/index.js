@@ -34,11 +34,11 @@ const Carousell = ({ imgs, path }) => {
 
 	const slides = imgs.map(item => {
 		return (
-			<div key="item">
+			<div key={item}>
 				<img
 					src={"/" + path + "/" + item}
 					height="250px"
-					alt={"front end certificate " + item.split(".")[0]}
+					alt={path + " certificate " + item.split(".")[0]}
 				/>
 			</div>
 		);

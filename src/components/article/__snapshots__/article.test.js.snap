@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article renders correctly 1`] = `
+<div
+  className="card"
+  style={
+    Object {
+      "minHeight": "200",
+    }
+  }
+>
+  <h5
+    className="bg-info card-header text-white"
+  >
+    heading
+  </h5>
+  <div
+    className="card-body"
+  >
+    content
+  </div>
+</div>
+`;
