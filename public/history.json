@@ -1,185 +1,240 @@
 [
 	{
-	"year": "2005",
-	"title": "Full stack Web developer",
-	"details": {
-		"summary": ["Back end, Front end and Full stack development contracts."],
-		"title": "Technologies",
-		"listItems" : [{
-			"id": 1,
-			"text": "Back end Technologies",
-			"link": null
-		}, {
-			"id": 2,
-			"text": "Front end Technologies",
-			"link": null
-		}]
+		"year": "2005",
+		"title": "Full stack Web developer",
+		"details": {
+			"summary": [
+				"Back end, Front end and Full stack development contracts."
+			],
+			"title": "Technologies",
+			"listItems": [
+				{
+					"id": 1,
+					"text": "Back end Technologies",
+					"link": "/back-end"
+				},
+				{
+					"id": 2,
+					"text": "Front end Technologies",
+					"link": "/front-end"
+				}
+			]
+		}
+	},
+	{
+		"year": "2003",
+		"title": "Database and Web developer",
+		"details": {
+			"summary": [],
+			"title": "Software & Programming languages",
+			"listItems": [
+				{
+					"id": 1,
+					"text": "SQL Server including SSRS, SSAS",
+					"link": null
+				},
+				{
+					"id": 2,
+					"text": "Oracle",
+					"link": null
+				},
+				{
+					"id": 3,
+					"text": "MS Access",
+					"link": null
+				},
+				{
+					"id": 4,
+					"text": "Classic ASP",
+					"link": null
+				},
+				{
+					"id": 5,
+					"text": "HTML",
+					"link": null
+				},
+				{
+					"id": 6,
+					"text": "JavaScript",
+					"link": null
+				},
+				{
+					"id": 7,
+					"text": "CSS",
+					"link": null
+				}
+			]
+		}
+	},
+	{
+		"year": "2000",
+		"title": "Support",
+		"details": {
+			"summary": [
+				"Desktop and remote support for Unisys, Symonds Group, Panasonic"
+			],
+			"title": "Software (not limited to)",
+			"listItems": [
+				{
+					"id": 1,
+					"text": "Windows",
+					"link": null
+				},
+				{
+					"id": 2,
+					"text": "MS Office",
+					"link": null
+				},
+				{
+					"id": 3,
+					"text": "Exchange",
+					"link": null
+				},
+				{
+					"id": 4,
+					"text": "Lotus Notes",
+					"link": null
+				},
+				{
+					"id": 5,
+					"text": "SQL Server",
+					"link": null
+				}
+			]
+		}
+	},
+	{
+		"year": "1999",
+		"title": "Y2K",
+		"details": {
+			"summary": [
+				"Y2K for Dysis systems, Taunton Council, North Wales Newpapers, Scottish Courage Breweries including software migrations and audits"
+			],
+			"title": "Software & Programming Languages",
+			"listItems": [
+				{
+					"id": 1,
+					"text": "SQL Server",
+					"link": null
+				},
+				{
+					"id": 2,
+					"text": "MS Office",
+					"link": null
+				},
+				{
+					"id": 3,
+					"text": "Operating Systems",
+					"link": null
+				},
+				{
+					"id": 4,
+					"text": "VBA",
+					"link": null
+				},
+				{
+					"id": 5,
+					"text": "BIOS updates",
+					"link": null
+				}
+			]
+		}
+	},
+	{
+		"year": "1998",
+		"title": "Software Trainer",
+		"details": {
+			"summary": [
+				"Classroom, small group and one to one training including contracts for Swindon Bourough Council and British Steel"
+			],
+			"title": "Software & Programming Languages",
+			"listItems": [
+				{
+					"id": 1,
+					"text": "Bespoke Software training",
+					"link": null
+				},
+				{
+					"id": 2,
+					"text": "Lotus Smart Suite",
+					"link": null
+				},
+				{
+					"id": 3,
+					"text": "MS Office",
+					"link": null
+				},
+				{
+					"id": 4,
+					"text": "Html",
+					"link": null
+				}
+			]
+		}
+	},
+	{
+		"year": "1995",
+		"title": "Computer hardware",
+		"details": {
+			"summary": [
+				"Repair of workstation and server motherboards to component level for Intel.",
+				"Research and Development on laptop motherbaords for Dell."
+			],
+			"title": "Software & Programming Languages",
+			"listItems": [
+				{
+					"id": 1,
+					"text": "C",
+					"link": null
+				},
+				{
+					"id": 2,
+					"text": "MS Access",
+					"link": null
+				},
+				{
+					"id": 3,
+					"text": "VBA",
+					"link": null
+				},
+				{
+					"id": 4,
+					"text": "SQL",
+					"link": null
+				},
+				{
+					"id": 5,
+					"text": "Assembly language",
+					"link": null
+				}
+			]
+		}
+	},
+	{
+		"year": "1991",
+		"title": "Apprentice (MoD)",
+		"details": {
+			"summary": [
+				"ONC - HND Electrical and Electronic Engineering"
+			],
+			"title": "Programming Languages",
+			"listItems": [
+				{
+					"id": 1,
+					"text": "C",
+					"link": null
+				},
+				{
+					"id": 2,
+					"text": "Pascal",
+					"link": null
+				},
+				{
+					"id": 3,
+					"text": "6809 assembly language",
+					"link": null
+				}
+			]
+		}
 	}
-}, {
-	"year": "2003",
-	"title": "Database and Web developer",
-	"details": {
-		"summary": [],
-		"title": "Software & Programming languages",
-		"listItems" : [{
-			"id": 1,
-			"text": "SQL Server including SSRS, SSAS",
-			"link": null
-		}, {
-			"id": 2,
-			"text": "Oracle",
-			"link": null
-		}, {
-			"id": 3,
-			"text": "MS Access",
-			"link": null
-		}, {
-			"id": 4,
-			"text": "Classic ASP",
-			"link": null
-		}, {
-			"id": 5,
-			"text": "HTML",
-			"link": null
-		}, {
-			"id": 6,
-			"text": "JavaScript",
-			"link": null
-		}, {
-			"id": 7,
-			"text": "CSS",
-			"link": null
-		}]
-	}
-}, {
-	"year": "2000",
-	"title": "Support",
-	"details": {
-		"summary": ["Desktop and remote support for Unisys, Symonds Group, Panasonic"],
-		"title": "Software (not limited to)",
-		"listItems" : [{
-			"id": 1,
-			"text": "Windows",
-			"link": null
-		}, {
-			"id": 2,
-			"text": "MS Office",
-			"link": null
-		}, {
-			"id": 3,
-			"text": "Exchange",
-			"link": null
-		}, {
-			"id": 4,
-			"text": "Lotus Notes",
-			"link": null
-		}, {
-			"id": 5,
-			"text": "SQL Server",
-			"link": null
-		}]
-	}
-}, {
-	"year": "1999",
-	"title": "Y2K",
-	"details": {
-		"summary": ["Y2K for Dysis systems, Taunton Council, North Wales Newpapers, Scottish Courage Breweries including software migrations and audits"],
-		"title": "Software & Programming Languages",
-		"listItems" : [{
-			"id": 1,
-			"text": "SQL Server",
-			"link": null
-		}, {
-			"id": 2,
-			"text": "MS Office",
-			"link": null
-		}, {
-			"id": 3,
-			"text": "Operating Systems",
-			"link": null
-		}, {
-			"id": 4,
-			"text": "VBA",
-			"link": null
-		}, {
-			"id": 5,
-			"text": "BIOS updates",
-			"link": null
-		}]
-	}
-}, {
-	"year": "1998",
-	"title": "Software Trainer",
-	"details": {
-		"summary": ["Classroom, small group and one to one training including contracts for Swindon Bourough Council and British Steel"],
-		"title": "Software & Programming Languages",
-		"listItems" : [{
-			"id": 1,
-			"text": "Bespoke Software training",
-			"link": null
-		}, {
-			"id": 2,
-			"text": "Lotus Smart Suite",
-			"link": null
-		}, {
-			"id": 3,
-			"text": "MS Office",
-			"link": null
-		}, {
-			"id": 4,
-			"text": "Html",
-			"link": null
-		}]
-	}
-}, {
-	"year": "1995",
-	"title": "Computer hardware",
-	"details": {
-		"summary": [
-			"Repair of workstation and server motherboards to component level for Intel.",
-			"Research and Development on laptop motherbaords for Dell."
-		],
-		"title": "Software & Programming Languages",
-		"listItems" : [{
-			"id": 1,
-			"text": "C",
-			"link": null
-		}, {
-			"id": 2,
-			"text": "MS Access",
-			"link": null
-		}, {
-			"id": 3,
-			"text": "VBA",
-			"link": null
-		}, {
-			"id": 4,
-			"text": "SQL",
-			"link": null
-		}, {
-			"id": 5,
-			"text": "Assembly language",
-			"link": null
-		}]
-	}
-}, {
-	"year": "1991",
-	"title": "Apprentice (MoD)",
-	"details": {
-		"summary": ["ONC - HND Electrical and Electronic Engineering"],
-		"title": "Programming Languages",
-		"listItems" : [{
-			"id": 1,
-			"text": "C",
-			"link": null
-		}, {
-			"id": 2,
-			"text": "Pascal",
-			"link": null
-		}, {
-			"id": 3,
-			"text": "6809 assembly language",
-			"link": null
-		}]
-	}
-}]
+]
